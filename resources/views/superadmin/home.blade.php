@@ -7,6 +7,8 @@
     <title>Superadmin Home</title>
 </head>
 <body>
+    <a href="/logout">logout</a>
     <h1>Superadmin Home</h1>
+    </form>
 </body>
 </html>
