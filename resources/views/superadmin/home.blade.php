@@ -8,6 +8,8 @@
 </head>
 <body>
     <a href="/logout">logout</a>
+    <a href="{{route('SalesController.physicalStore')}}">Physical Store</a>
+
     <h1>Superadmin Home</h1>
     </form>
 </body>

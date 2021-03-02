@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    Hello admin
+    Hello accountant
     <a href="/logout">logout</a>
 </body>
 </html>

@@ -46,20 +46,20 @@ class LoginController extends Controller
     {
         return view('superadmin.home');
     }
-    public function customerDashboard()
-    {
-        $data = User::find(session('loggedUser'));
-        return view('customer.dashboard')->with('data',$data);
-    }
-    public function accountantDashboard()
-    {
-        $data = User::find(session('loggedUser'));
-        return view('accountant.dashboard')->with('data',$data);
-    }
-    public function vendorDashboard()
-    {
-        $data = User::find(session('loggedUser'));
-        return view('vendor.dashboard')->with('data',$data);
-    }
+    // public function customerDashboard()
+    // {
+    //     $data = User::find(session('loggedUser'));
+    //     return view('customer.dashboard')->with('data',$data);
+    // }
+    // public function accountantDashboard()
+    // {
+    //     $data = User::find(session('loggedUser'));
+    //     return view('accountant.dashboard')->with('data',$data);
+    // }
+    // public function vendorDashboard()
+    // {
+    //     $data = User::find(session('loggedUser'));
+    //     return view('vendor.dashboard')->with('data',$data);
+    // }
     
 }
