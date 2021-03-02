@@ -22,3 +22,5 @@ Route::get('/admin',[LoginController::class,'superAdminDashboard'])->name('super
 Route::get('/customer',[LoginController::class,'customerDashboard'])->name('admin.dashboard');
 Route::get('/accountant',[LoginController::class,'accountantDashboard'])->name('author.dashboard');
 Route::get('/vendor',[LoginController::class,'vendorDashboard'])->name('user.dashboard');
+
+
