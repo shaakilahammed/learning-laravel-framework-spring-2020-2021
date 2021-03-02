@@ -8,7 +8,7 @@
 
 	<form method="post">
         @csrf
-
+       
 		<fieldset>
 			<legend>Login</legend>
 			<table>
@@ -29,8 +29,14 @@
                     </td>
 				</tr>
 				<tr>
-					<td><input type="submit" name="submit" value="Submit"></td>
+					<td><input type="submit" name="submit" value="Submit">
+                       
+        
+                    </td>
 					<td></td>
+                    <span style="color: red">
+                        {{ session('error') }}
+                    </span>
 				</tr>
 			</table>
 		</fieldset>
