@@ -12,6 +12,7 @@
     
     <a  href="{{ route('salesLogDetails') }}">View Sales Log</a> 
     <a href="{{ route('SalesController.salesLog') }}">Sell Product</a>
+    
 
     <h1>Todays Total Sell :{{ count($data1)}}</h1>
     <h1>Last 7day sell :{{ count($data2)}}</h1>

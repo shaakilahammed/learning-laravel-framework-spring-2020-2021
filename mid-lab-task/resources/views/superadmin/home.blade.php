@@ -7,10 +7,20 @@
     <title>Superadmin Home</title>
 </head>
 <body>
-    <a href="/logout">logout</a>
-    <a href="{{route('SalesController.physicalStore')}}">Physical Store</a>
+    <a href="/logout">logout</a><br>
+    <a href="{{route('SalesController.physicalStore')}}">Physical Store</a><br>
+    <a href="{{ route('SalesController.ecommerceLog') }}">E-commerce Store</a><br>
+    <a href="{{ route('SalesController.mediaLog') }}">Social Media STore</a><br>
 
-    <h1>Superadmin Home</h1>
-    </form>
+    <a href="{{ route('product.manage') }}">Manage Products</a><br>
+    <a href="{{ route('product.existingProducts')  }}">Existing Products</a><br>
+    <a href="{{ route('product.upcomingProducts') }}">Upcoming Products</a><br>
+    <a href="{{ route('product.addProducts') }}">Add Products</a><br>
+
+
+   
+
+    <h1>Super admin Home</h1>
+    
 </body>
 </html>

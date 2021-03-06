@@ -31,7 +31,7 @@ class SalesController extends Controller
         $data1 = Social_media_channel::whereDate('created_at', today())->get();
         $date = \Carbon\Carbon::today()->subDays(7);
         $data2 = Social_media_channel::where('created_at', '>=', $date)->get();
-        return \view('superadmin.mediaLog.manage',['data1'=>$data1,'data2'=>$data2]);
+        return \view('superadmin.mediaLogManage',['data1'=>$data1,'data2'=>$data2]);
     }
 
     public function ecommerceLog()
@@ -41,7 +41,7 @@ class SalesController extends Controller
         $data2 = Ecommerce_channel::where('created_at', '>=', $date)->get();
         return \view('superadmin.ecommerceLog.manage',['data1'=>$data1,'data2'=>$data2]);
     }
-
+// done
     public function salesLog()
     {
        
@@ -82,11 +82,11 @@ class SalesController extends Controller
     {
         return \view('superadmin.physicalStore.upload');
     }
-
+// done
     public function salesLogDetails()
     {
         $physicalStore = Physical_store_channel::where('status','=','sold')->get();
-        return view('superadmin.physicalStore.salesLog')->with('Physicalstore', $physicalStore);
+        return view('superadmin.physicalStoreSalesLog')->with('Physicalstore', $physicalStore);
     }
 
     public function soldlog()
