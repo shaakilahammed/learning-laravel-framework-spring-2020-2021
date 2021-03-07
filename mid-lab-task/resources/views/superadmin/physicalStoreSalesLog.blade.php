@@ -1,19 +1,11 @@
 
-              <a href="{{ route('Sales.sold.download') }}" class="card-title ">
-                <i class="fas fa-plus-circle nav-icon"></i>
-                Download Sales Report
-              </a>
-              <a href="{{ route('Sales.pdf.pending.download') }}" class="card-title ">
-                <i class="fas fa-plus-circle nav-icon"></i>
-                Download Pending Log
-              </a>
-              <a href="{{ route('Sales.excel.upload') }}" class="card-title">
-                <i class="fas fa-upload nav-icon"></i>
-                Upload Data With Excel
-              </a>
+              <a href="{{ route('Sales.sold.download') }}"> Download Sales Report </a> | 
+              <a href="{{ route('Sales.pdf.pending.download') }}">Download Pending Log</a> ||| 
+              <a href="/logout">logout</a>
+              {{-- <a href="{{ route('Sales.excel.upload') }}">Upload Data With Excel</a> --}}
 
-              <table id="example1" class="table table-hover" >
-                <thead class="table-dark">
+              <table border="1">
+                <thead>
                 <tr>
                     <th>Id</th>
                     <th>Name</th>

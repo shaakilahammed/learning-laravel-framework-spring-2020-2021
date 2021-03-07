@@ -27,18 +27,8 @@ Route::post('/registration', [RegistrationController::class, 'register'])->name(
 Route::group(['middleware'=>['SessionVerify']], function(){
     Route::get('/admin',[LoginController::class,'superAdminDashboard'])->name('superadmin.dashboard');
     Route::get('/logout', [LogoutController::class, 'logout']);
-});
-
-
-
-// Route::get('/customer',[LoginController::class,'customerDashboard'])->name('admin.dashboard');
-// Route::get('/accountant',[LoginController::class,'accountantDashboard'])->name('author.dashboard');
-// Route::get('/vendor',[LoginController::class,'vendorDashboard'])->name('user.dashboard');
-
-
-
-
-Route::group(['prefix' => 'system/sales'], function () {
+    
+    Route::group(['prefix' => 'system/sales'], function () {
 
         Route::get('/physical_store', [SalesController::class,'physicalStore'])->name('SalesController.physicalStore');
 
@@ -92,4 +82,16 @@ Route::group(['prefix' => 'system/sales'], function () {
         
         
     });
+
+
+});
+
+
+
+// Route::get('/customer',[LoginController::class,'customerDashboard'])->name('admin.dashboard');
+// Route::get('/accountant',[LoginController::class,'accountantDashboard'])->name('author.dashboard');
+// Route::get('/vendor',[LoginController::class,'vendorDashboard'])->name('user.dashboard');
+
+
+
 

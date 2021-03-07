@@ -8,10 +8,11 @@
     <title>Superadmin Home</title>
 </head>
 <body>
-    <a href="/logout">logout</a>
     
-    <a  href="{{ route('salesLogDetails') }}">View Sales Log</a> 
-    <a href="{{ route('SalesController.salesLog') }}">Sell Product</a>
+    
+    <a  href="{{ route('salesLogDetails') }}">View Sales Log</a> | 
+    <a href="{{ route('SalesController.salesLog') }}">Sell Product</a> ||| 
+    <a href="/logout">logout</a>
     
 
     <h1>Todays Total Sell :{{ count($data1)}}</h1>
