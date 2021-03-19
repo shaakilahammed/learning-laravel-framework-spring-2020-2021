@@ -8,7 +8,7 @@
 </head>
 <body>
   
-
+  <a href="/admin">Home</a> | 
 <a href="{{ route('SalesController.physicalStore') }}">Physical Store</a> ||| 
 <a href="/logout">logout</a>
 <h3 >Export</h3>

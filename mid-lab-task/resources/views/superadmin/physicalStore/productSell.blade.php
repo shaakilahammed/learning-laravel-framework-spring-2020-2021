@@ -7,7 +7,7 @@
     <title>Product Sell</title>
 </head>
 <body>
-    
+    <a href="/admin">Home</a>
     
     <h2>Product Sales Log</h2>
 

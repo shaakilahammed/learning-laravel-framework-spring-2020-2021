@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    
+    <a href="/admin">Home</a> | 
     <a  href="{{ route('salesLogDetails') }}">View Sales Log</a> | 
     <a href="{{ route('SalesController.salesLog') }}">Sell Product</a> ||| 
     <a href="/logout">logout</a>

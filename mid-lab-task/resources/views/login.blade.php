@@ -29,10 +29,10 @@
                     </td>
 				</tr>
 				<tr>
-					<td><input type="submit" name="submit" value="Submit">
-                       
+					<td><input type="submit" name="submit" value="Submit"></td>
+					<td><a href="{{route('registration.index')}}">Registration</a></td>  
         
-                    </td>
+                    
 					<td></td>
                     <span style="color: red">
                         {{ session('error') }}

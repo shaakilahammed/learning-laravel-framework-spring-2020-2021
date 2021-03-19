@@ -79,7 +79,7 @@
 				</tr>
                 <tr>
 					<td>Confirm Password</td>
-					<td><input type="password" name="confirmPassword" value="{{ old('confirmPassword') }}">
+					<td><input type="password" name="password_confirmation" value="{{ old('confirmPassword') }}">
                         @error('confirmPassword')
                         <span style="margin:auto; color:red">{{ $message }}</span>
                         @enderror
@@ -97,10 +97,10 @@
 					</td>
 				</tr>
 				<tr>
-					<td><input type="submit" name="submit" value="Submit">
-                       
+					<td><input type="submit" name="submit" value="Submit"> </td>
+                    <td><a href="{{route('login.index')}}">Login</a></td>     
         
-                    </td>
+                   
 					
                     {{-- <span style="color: red">
                         {{ session('error') }}

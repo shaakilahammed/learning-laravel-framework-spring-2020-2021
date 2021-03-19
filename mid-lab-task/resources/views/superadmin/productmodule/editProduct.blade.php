@@ -8,6 +8,7 @@
     <title>Edit Products </title>
 </head>
 <body>
+    <a href="/admin">Home</a>
     <h2>Edit Products</h2>
 <form action="{{ route('product.updateProducts') }}" method="post">
     @csrf

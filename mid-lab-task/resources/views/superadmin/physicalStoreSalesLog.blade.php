@@ -1,4 +1,4 @@
-
+<a href="/admin">Home</a> | 
               <a href="{{ route('Sales.sold.download') }}"> Download Sales Report </a> | 
               <a href="{{ route('Sales.pdf.pending.download') }}">Download Pending Log</a> ||| 
               <a href="/logout">logout</a>

@@ -8,7 +8,7 @@
   <title>Existing Products</title>
 </head>
 <body>
-
+  <a href="/admin">Home</a> | 
 <a href="{{ route('product.manage') }}">Manage Products</a> | 
 <a href="{{ route('product.existingProducts')  }}">Existing Products</a> | 
 <a href="{{ route('product.upcomingProducts') }}">Upcoming Products</a> | 

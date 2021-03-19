@@ -24,15 +24,15 @@ class LoginController extends Controller
                return redirect('/admin');
             }else if($user->type=='customer'){
                 $req->session()->put('loggedUser',$user->id);
-                return "customer";
+                return redirect('/customer');
             }
             else if($user->type=='vendor'){
                 $req->session()->put('loggedUser',$user->id);
-                return "vendor";
+                return redirect('/vendor');
             }
             else if($user->type=='accountant'){
                 $req->session()->put('loggedUser',$user->id);
-                return "accountant";
+                return redirect('/accountant');
             }
             
         }else{
@@ -46,20 +46,17 @@ class LoginController extends Controller
     {
         return view('superadmin.home');
     }
-    // public function customerDashboard()
-    // {
-    //     $data = User::find(session('loggedUser'));
-    //     return view('customer.dashboard')->with('data',$data);
-    // }
-    // public function accountantDashboard()
-    // {
-    //     $data = User::find(session('loggedUser'));
-    //     return view('accountant.dashboard')->with('data',$data);
-    // }
-    // public function vendorDashboard()
-    // {
-    //     $data = User::find(session('loggedUser'));
-    //     return view('vendor.dashboard')->with('data',$data);
-    // }
+    public function customerDashboard()
+    {
+        return view('customer.home');
+    }
+    public function accountantDashboard()
+    {
+        return view('accountant.home');
+    }
+    public function vendorDashboard()
+    {
+        return view('vendor.home');
+    }
     
 }

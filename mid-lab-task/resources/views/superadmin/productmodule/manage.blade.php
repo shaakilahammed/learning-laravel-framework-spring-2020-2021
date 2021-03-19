@@ -8,6 +8,7 @@
     <title>Product</title>
 </head>
 <body>
+    <a href="/admin">Home</a> | 
     <h1 class="card-body text-center">Total Existing Products :{{ count($data) }}</h1>
                      
     <h1 class="card-body text-center">Total Upcoming Products :{{ count($data1) }}</h1>

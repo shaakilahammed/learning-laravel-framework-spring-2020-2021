@@ -8,6 +8,7 @@
     <title>MediaLog</title>
 </head>
 <body>
+    <a href="/admin">Home</a>
     <h1>Todays total sold :{{ count($data1)}}</h1>
                      
     <h1>Last 7 days total sold :{{ count($data2)}}</h1>

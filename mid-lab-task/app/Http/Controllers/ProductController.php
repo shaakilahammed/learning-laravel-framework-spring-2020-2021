@@ -12,7 +12,7 @@ class ProductController extends Controller
     public function manage()
     {
         $data = Product::where('status','=','existing')->get();
-        $data1 = Product::where('status','=','existing')->get();
+        $data1 = Product::where('status','=','upcoming')->get();
        return \view('superadmin.productmodule.manage',['data'=>$data,'data1'=>$data1]);
     }
     public function existingProducts()
@@ -36,7 +36,8 @@ class ProductController extends Controller
     {
         $req->validate([
             'product_name' => 'required|min:5|max:30',
-            'unit_prics' => 'required|min:1|max:50',
+            'unit_prics' => 'required|integer|min:0',
+            'quantity' => 'required|integer|min:0',
             'category_id' => 'required',
             'status' => 'required',
         ]);
@@ -65,7 +66,8 @@ class ProductController extends Controller
     {
         $req->validate([
             'product_name' => 'required|min:5|max:30',
-            'unit_prics' => 'required|min:1|max:50',
+            'unit_prics' => 'required|integer|min:0',
+            'quantity' => 'required|integer|min:0',
             'category_id' => 'required',
             'status' => 'required',
         ]);
@@ -105,14 +107,17 @@ class ProductController extends Controller
     {
         $data = Product::find($id);
         $category = Category::all();
-        return \view('superadmin.productmodule.upcomingEdit',['data'=>$data,'category'=>$category]);
+        $vendor = Vendore::all();
+        // return \view('superadmin.productmodule.editProduct',['data'=>$data,'category'=>$category,'vendor'=>$vendor]);
+        return \view('superadmin.productmodule.upcomingEdit',['data'=>$data,'category'=>$category,'vendor'=>$vendor]);
     }
 
     public function updateUpcomingProduct(Request $req)
     {
         $req->validate([
             'product_name' => 'required|min:5|max:30',
-            'unit_prics' => 'required|min:1|max:50',
+            'unit_prics' => 'required|integer|min:0',
+            'quantity' => 'required|integer|min:0',
             'category_id' => 'required',
             'status' => 'required',
         ]);

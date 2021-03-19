@@ -1,17 +1,7 @@
 
-
-<div class="content-header">
-    <div class="container-fluid">
-        <div class="row mb-2">
-            <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item "><a href="{{ route('product.manage') }}">Product Manage</a></li>
-                    <li class="breadcrumb-item active">Manage</li>
-                </ol>
-            </div>
-        </div>
-    </div>
-</div>
+<a href="/admin">Home</a> | 
+<a href="{{ route('product.manage') }}">Product Manage</a> | 
+<a href="{{ route('product.addProducts') }}" >Add Product</a>
 
 <section class="content">
     <div class="container-fluid">
@@ -21,10 +11,7 @@
             <div class="card-header">
               <h1>Product Details</h1>
               
-              <a href="{{ route('product.addProducts') }}" class="card-title float-right">
-                <i class="fas fa-plus-circle nav-icon"></i>
-               Add Product
-              </a>
+              
               
             </div>
             <!-- /.card-header -->

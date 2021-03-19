@@ -8,6 +8,7 @@
     <title>Add Product</title>
 </head>
 <body>
+    <a href="/admin">Home</a>
     <h2>Add Products</h2>
     <form action="{{ route('product.storeProduct') }}" method="post">
         @csrf
